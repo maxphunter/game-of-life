@@ -5,7 +5,7 @@ let dead = false;
 
 
 
-test('adds 1 + 2 to equal 3', () => {
+test('Predict Next Generation', () => {
 
   var initialState = [[dead , dead , dead , dead , dead , dead , alive, dead],
                       [alive, alive, alive, dead , dead , dead , alive, dead],
@@ -21,5 +21,5 @@ test('adds 1 + 2 to equal 3', () => {
                         [dead , dead , dead , alive, alive, dead , dead , dead],
                         [dead , dead , dead , alive, alive, dead , dead , dead]];
 
-  expect(gameOfLife(initialState)).toBe(expectedState);
+  expect(gameOfLife(initialState)).toEqual(expectedState);
 });
